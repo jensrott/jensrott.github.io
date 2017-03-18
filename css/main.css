@@ -1,34 +1,46 @@
-li {
-font-size: 50px;
-
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Arimo");
 
 body {
 color: #000;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-animation: pulse 5s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    background-color: #001F3F;
-  }
-  100% {
-    background-color: #FF4136;
-  }
-}
-
-header {
-animation: pulse 5s infinite;
+font-family: "Arimo", sans-serif;
+background-image: url("http://i66.tinypic.com/11v5v9j.jpg");
+background-size: cover;
+background-repeat: no-repeat;
 
 }
 
 
-.navigation {
-list-style-type: none; /* bolletjes wegwerken */
+h1 {
+color: dodgerblue;
+font-size: 100px;
+text-align: center;
+}
+
+.logo {
+float: left;
+padding: 10px 0;
+height: 100px;
+width: 300px;
+
+
+}
+
+/* de volledige navigatie bar */
+.navigation { 
+list-style: none; /* bolletjes wegwerken */
 padding: 3px 15px;
-margin-top: 20px; /* plaats boven */
-
+float: center;
+background: linear-gradient(#0AB2FA, #0077ee);
+margin-top: 50px;
+opacity: 0.7; /* transparant maken */
+filter:alpha (opacity=70); /* transparant maken */
+border: 4px solid #000;
+box-shadow: 10px 10px 10px #000;
+cursor: pointer;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
 
 
 }
@@ -39,58 +51,66 @@ margin-top: 20px; /* plaats boven */
     display: table;
 }
 
+/* elke link in de navigatie (vak) */
 .navigation_item {
-background-color:antiquewhite;
+background: linear-gradient(#0AB2FA, #0077ee);
 float: right;
-margin-top: 0;
+margin-top: 0; 
 margin-right: 0;
-padding: 3px 15px; /* plaats tussen blokjes */
+margin-left: 0;
+margin-bottom: 0;
+padding:  /* plaats tussen blokjes */  
 
 }
 
+/* de links in de navigatie */
 .navigation_item a {
-background-color:#001F3F; 
-color: white;
-padding: 30px 30px; 
-display: block; /* ziet er zo beter uit, precies een blok */ 
+color: ghostwhite;
+display: inline-block; /* ziet er zo beter uit, precies een blok */ 
 text-decoration: none;
-
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 30px;
+margin-bottom: 30px;
+font-size: 30px;
+position: relative;
 }
 
-.navigation_item a:hover { /* als je over de knop heen gaat */ 
-    background: darkblue;
+/* als je over de knop heen gaat */ 
+.navigation_item a:hover { 
+    color: #000;
 }
 
-.navigation_item a:active { /* als je de knop indruk */ 
-    background: purple;
-}
-
-
-a {
-    transition: green 0.2s;
-
-}
-
-
-h1 {
-color: seagreen;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 200px;
-animation-duration: 3s;
-animation-name: slidein;
-animation-iteration-count: infinite;
-animation-direction: alternate;
+/* als je de knop indruk */
+.navigation_item a:active {  
+    color: slategray;
 }
 
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+/* animatie als je over de link gaat */
+.navigation_item a::before {
+  content:'';
+  display: block;
+  height: 5px;
+ 
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 400ms;
+  
 }
+
+.navigation_item a:hover::before {
+width: 100%;
+
+}
+
+/* javascript tijd opmaken */
+.time {
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 100px;
+    
+}
+

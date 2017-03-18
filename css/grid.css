@@ -1,22 +1,29 @@
+/* telt voor alles */
 * {
     box-sizing: border-box
 }
 
-.container {
+/* dit is de volledige header */
+.container { 
     width: 100%;
     max-width: 1140px;
     min-width: 600px;
     margin:0 auto;
-    overflow: hidden;     
+    overflow: hidden;
+    margin-bottom: 100px;  /* plaats tussen bovenkant en tekst */   
+
 }
+
 .clearfix::after,
-.grid__row::after {
+.grid__row::after { /* alles werkt nu */
 content:'';
 clear: both;
 display: table;
+
 }
 
-.grid__row {
+/* het volledige grid */
+.grid__row { 
     
 }
 
@@ -29,6 +36,7 @@ display: table;
     float: left;
     padding: 20px;
     margin: 0;
+    border: 5px solid blue;
 }
 .grid__column-3 {width: 25%}
 .grid__column-4 {width: 33.33%}
