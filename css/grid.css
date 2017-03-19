@@ -3,17 +3,6 @@
     box-sizing: border-box
 }
 
-/* dit is de volledige header */
-.container { 
-    width: 100%;
-    max-width: 1140px;
-    min-width: 600px;
-    margin:0 auto;
-    overflow: hidden;
-    margin-bottom: 100px;  /* plaats tussen bovenkant en tekst */   
-
-}
-
 .clearfix::after,
 .grid__row::after { /* alles werkt nu */
 content:'';

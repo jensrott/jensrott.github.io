@@ -1,6 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url("https://fonts.googleapis.com/css?family=Arimo");
 
+
+
+span {
+    color: orangered;
+    text-transform: uppercase;
+    text-shadow: 4px 4px #000; 
+}
+
+
+/* javascript tijd opmaken */
+.time {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 100px;
+    border: 10px solid orangered;
+    color: orangered;
+    text-shadow: 2px 2px #000;
+    
+}
+
 body {
 color: #000;
 font-family: "Arimo", sans-serif;
@@ -11,10 +31,11 @@ background-repeat: no-repeat;
 }
 
 
-h1 {
+.title_slogan {
 color: dodgerblue;
 font-size: 100px;
 text-align: center;
+margin: 0; 
 }
 
 .logo {
@@ -23,6 +44,16 @@ padding: 10px 0;
 height: 100px;
 width: 300px;
 
+}
+
+/* dit is de volledige navigatiebar */
+.container { 
+    width: 100%;
+    max-width: 1140px;
+    min-width: 600px;
+    margin:0 auto;
+    overflow: hidden;
+    margin-bottom: 50px;  /* plaats tussen bovenkant en tekst */   
 
 }
 
@@ -32,7 +63,6 @@ list-style: none; /* bolletjes wegwerken */
 padding: 3px 15px;
 float: center;
 background: linear-gradient(#0AB2FA, #0077ee);
-margin-top: 50px;
 opacity: 0.7; /* transparant maken */
 filter:alpha (opacity=70); /* transparant maken */
 border: 4px solid #000;
@@ -41,6 +71,7 @@ cursor: pointer;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
+text-align: '';
 
 
 }
@@ -59,7 +90,8 @@ margin-top: 0;
 margin-right: 0;
 margin-left: 0;
 margin-bottom: 0;
-padding:  /* plaats tussen blokjes */  
+padding:'';  /* plaats tussen blokjes */
+text-align: ''; 
 
 }
 
@@ -74,6 +106,7 @@ margin-top: 30px;
 margin-bottom: 30px;
 font-size: 30px;
 position: relative;
+text-align: '';
 }
 
 /* als je over de knop heen gaat */ 
@@ -106,11 +139,31 @@ width: 100%;
 
 }
 
-/* javascript tijd opmaken */
-.time {
-    margin-bottom: 50px;
-    text-align: left;
-    font-size: 100px;
-    
+
+#welcome_slogan {
+    background: #1D1D1D;
+    background: -moz-linear-gradient(#535353, #000);
+    background: -o-linear-gradient(#535353, #000);
+    background: -webkit-linear-gradient(#535353, #000);
+    width: 100%;
+    height: 100%;
 }
+
+
+
+#welcome_slogan H1 {
+
+}
+
+header {
+
+  background: #1D1D1D;
+  background: -moz-linear-gradient(#535353, #000);
+  background: -o-linear-gradient(#535353, #000);
+  background: -webkit-linear-gradient(#535353, #000);
+  width: 100%;
+  
+}
+
+
 
