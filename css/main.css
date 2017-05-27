@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+ body {
+    background-color: rgb(213, 150, 98);
+    }
+
+h1 {
+   font-family: 'Raleway', sans-serif;
+   color: rgb(102,51,0);
+   font-size:50px;
+   text-align: center;
+   border: solid 2px black;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0,0,0);
+    line-height: 1.5;
+
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(153,76,0);
+    font-size:30px
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  color:rgb(102,51,0);
+  font-size:25px
+}
+
+a{
+    color:rgb(255,204,153);
+}
+
+
+<!--Application Form-->
+
+.text{
+    font-size:50%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  background-image: url(http://i63.tinypic.com/2052pad.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+form {
+  width: 500px;
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+label:after {
+  content: '*';
+  color: #ff7000;
+  margin-left: 3px;
+}
+
+.input-text, .input-textarea {
+  background: white;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+}
+
+.input-submit {
+  width: 100%;
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 20px;
+  color: white;
+  background: #ff7000;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button{
+    background-color: #EE701C;
+    border: solid;
+    color: white;
+    padding: 30px 175px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border: #FBE611;
+}
+
+.button:hover{
+  background-color: #FBE611;
+}
